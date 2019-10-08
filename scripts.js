@@ -1,4 +1,4 @@
-var costItem = [9.99,   //item0
+var costItem = [1.75,   //item0
                 1.50,   //item1 
                 2.00,   //item2
                 2.00,   //item3
@@ -14,7 +14,7 @@ var costItem = [9.99,   //item0
 var cashBalance = document.getElementById("display_text_balance");
 var cashBalanceNumber = parseFloat(cashBalance.innerHTML);
 cashBalanceNumber = 0;
-var selectedItem = 0;
+var selectedItem ;
 
 function buttonPressed(numberPressed) {
     var productName;
@@ -22,6 +22,12 @@ function buttonPressed(numberPressed) {
     var productCost = document.getElementById("display_text_cost");
 
     switch (numberPressed) {
+        case 0:
+            productName = document.getElementById("item0").getAttribute("value");
+            productNumber.innerHTML = numberPressed + "." + productName;
+            productCost.innerHTML = costItem[numberPressed].toFixed(2);
+            selectedItem = numberPressed;
+            break;            
         case 1:
             productName = document.getElementById("item1").getAttribute("value");
             productNumber.innerHTML = numberPressed + "." + productName;
