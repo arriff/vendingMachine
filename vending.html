@@ -1,7 +1,6 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="scripts.js"></script>
     </head>
     <body>
 <div id="machine">
@@ -11,24 +10,24 @@
                 <table>
                     <tr>
                         <div class="shelf">
-                            <div class="item">cola</div>
-                            <div class="item">fanta</div>
-                            <div class="item">sprite</div>
+                            <div class="item" id="item1" value="cola">1<br><br><img src = "items/cola.png"></div>
+                            <div class="item" id="item2" value="fanta">2<br><br><img src = "items/fanta.jpg"></div>
+                            <div class="item" id="item3" value="sprite">3<br><br><img src = "items/sprite.jpg"></div>
                         </div>
                         <div class="shelf">
-                            <div class="item">snicker</div>
-                            <div class="item">mars</div>
-                            <div class="item">twix</div>
+                            <div class="item" id="item4" value="snicker">4<br><br><img src = "items/snicker.jpg"></div>
+                            <div class="item" id="item5" value="mars">5<br><br><img src = "items/mars.jpg"></div>
+                            <div class="item" id="item6" value="twix">6<br><br><img src = "items/twix.jpg"></div>
                         </div>
                         <div class="shelf">
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
+                            <div class="item" id="item7" value="laysblauw">7<br><br><img src = "items/paprika.jpg"></div>
+                            <div class="item" id="item8" value="laysrood">8<br><br><img src = "items/naturel.jpg"></div>
+                            <div class="item" id="item9" value="laysgeel">9<br><br><img src = "items/onion.jpg"></div>
                         </div>
                         <div class="shelf">
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
+                            <div class="item" id="item*"></div>
+                            <div class="item" id="item0" value="redbull">0<br><br><img src = "items/redbull.jpg"></div>
+                            <div class="item" id="item#"></div>
                         </div>
                     </tr>
                 </table>
@@ -37,12 +36,12 @@
 
         <div id="right-column">
             <div id="display">
-                <div id="display_text_product">Product</div>
-                <div id="display_text_cost">0,00</div><br>
+                <div id="display_text_product">Product:</div><div id="display_product_number">x</div>
+                <div id="display_text_cost">0.00</div><br>
                 <div>Balance</div>
-                <div id="display_text_balance">0,00</div>
+                <div id="display_text_balance">0.00</div>
             </div>
-            <div id="insertCash">
+            <div id="insertCash" onclick="addBalance();">
             <div id="insertCash2"></div></div>
             <div id="insertButtons">
             <table>
@@ -66,10 +65,12 @@
                     <input type="button" value="0" onclick="buttonPressed(0);">
                     <input type="button" value="#">
                 </tr>
+                <button id="btn" onclick="substractBalance();">choose</button>
             </table>
             </div>
         </div>
     </div>
 </div>
 </body>
+<script src="scripts.js"></script>
 </html>

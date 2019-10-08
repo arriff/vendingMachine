@@ -27,13 +27,12 @@
     margin-right: 20px;
 }
 #display{
-    width:90px;
-    height:100px;
+    width:150px;
+    height:150px;
     background:lightgrey;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center; 
-    
 }
 #insertCash{
     background-color:lightgray; 
@@ -67,7 +66,6 @@ input[type="button"]
     height: 40px
 } 
 .shelf {
-
     background: darkgray;
     border: solid 1px black;
     width: 100%;
@@ -80,4 +78,19 @@ border: solid 1px black;
 width: 164px;
 height: 100%;
 text-align: center;
+}
+#display_text_product{
+    float: left;
+    margin-left: 5px;
+}
+#btn{
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+}
+.item img{
+    text-align: center;
+    width: 60%;
+    height: 60%;
+    mix-blend-mode: multiply;
 }
